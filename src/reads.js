@@ -94,9 +94,6 @@ const userStyle = makeStyles((theme) => ({
             minHeight:"100%",
         }
     },
-    catact:{
-        /*padding:"10px 5px 10px 230px",*/
-    },
     dynamic: {
         display:"flex",
         overflowX:"auto",
