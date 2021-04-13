@@ -164,7 +164,7 @@ export default function Reading(props){
             <div style={{display:"flex",overflowX:"auto" , padding:"32px 0px 0px 0px"}}>
         {details.map((detail)=> (
             <div className={classes.dyitem}>
-            <ButtonBase>
+            <ButtonBase onClick={()=>{window.location.assign(detail.link)}}>
           <Card className={classes.cardrule} raised={true}>
             <CardMedia
             component="img"
