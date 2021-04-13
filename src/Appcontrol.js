@@ -24,7 +24,7 @@ import Grid from '@material-ui/core/Grid';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import {BrowserRouter, Link as RouterLink, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Link as RouterLink, Route, Switch,Redirect} from "react-router-dom";
 import Body from "./home.js";
 import Sv from "./softwarevault.js";
 import Contrib from "./contribute.js";
@@ -186,6 +186,9 @@ function Appcontrol(props) {
         </Fab>
       </ScrollTop>
         </div>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
         <Route path="/home" render={() =>(<Body data={whole} control={control} />)}></Route>
         <Route path="/contribute" render={() =>(<Contrib/>)}></Route>
         <Route path="/projects" render={() =>{window.location.assign("https://github.com/maxkaustav")}}></Route>
