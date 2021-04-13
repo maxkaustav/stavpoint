@@ -177,7 +177,7 @@ export default function Description(props){
             <div style={{display:"flex",overflowX:"auto" , padding:"32px 0px 0px 0px",height:"70%"}}>
         {details.map((detail)=> (
             <div className={classes.dyitem}>
-            <ButtonBase>
+            <ButtonBase onClick={()=>{window.location.assign(detail.link)}}>
           <Card className={classes.cardrule} raised={true}>
             <CardMedia
             component="img"

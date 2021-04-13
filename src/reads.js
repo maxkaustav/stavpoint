@@ -144,7 +144,7 @@ const userStyle = makeStyles((theme) => ({
 
 }));  
 function textvary(text){
-    text=text.slice(0,129);
+    text=text.slice(0,80);
     text=text+"...";
     return text
 };
